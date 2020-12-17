@@ -1,0 +1,95 @@
+* {
+    font-family: "Meiryo";
+    font-size: 12px;
+}
+
+body, html {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.resizeHandle {
+    background-image: url(handle.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+#combatantTable {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+#combatantTableBody * {
+    color: #E2EBF5;
+    text-shadow: -1px 0 3px #217AA2, 0 1px 3px #217AA2, 1px 0 3px #217AA2, 0 -1px 3px #217AA2;
+    font-weight: 300;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.wrapper {
+    width: 40px;
+}
+
+@keyframes blink {
+    50% {border-color: red;}
+}
+
+.duration {
+    box-sizing: border-box;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border: 6px solid transparent;
+    color: white;
+    text-align: center;
+    padding: 3px 0;
+    font-size: 22px;
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+    border-image: url(pictures/ComboGIF.gif) 30 stretch;
+}
+
+.cooldown {
+    box-sizing: border-box;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border: 2px transparent;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 22px;
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+}
+
+.done {
+    box-sizing: border-box;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border: 2px transparent;
+    text-align: center;
+    padding: 12px 0;
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+}
+
+.awaitingdata {
+    width: 100%;
+	color: #DED7BE;
+	text-shadow: -1px 0 2px #795516, 0 1px 2px #795516, 1px 0 2px #795516, 0 -1px 2px #795516;
+    font-size: 20px;
+}
