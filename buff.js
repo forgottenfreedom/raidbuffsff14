@@ -43,7 +43,7 @@ function buffdraw(playerID, skillID) {
 
     if (ttssetting == true && skilltts == true) {
         saythings (skillID, tts);
-        //console.log(usertts);
+        console.log(usertts);
     };
 
     let durationtimer = setInterval(() => {
