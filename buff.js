@@ -42,7 +42,7 @@ function buffdraw(playerID, skillID) {
     }
 
     if (ttssetting == true && skilltts == true) {
-        saythings (skillID, tts);
+        saythings (skillID, usertts);
         console.log(usertts);
     };
 
