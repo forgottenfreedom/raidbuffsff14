@@ -41,9 +41,9 @@ function buffdraw(playerID, skillID) {
         usertts = tts[language];
     }
 
-    if (ttssetting == true && skilltts == true) {
+    if (ttssetting == true && skilltts == true) {       
         saythings (skillID, usertts);
-        console.log(usertts);
+        //console.log(usertts);
     };
 
     let durationtimer = setInterval(() => {
@@ -67,7 +67,7 @@ function buffdraw(playerID, skillID) {
             newpic.className = 'cooldown';
             newpic.innerHTML = cooldown;
         }
-        if (skillreminder == true && remindertime == cooldown && ttssetting ==true) {
+        if (skillreminder == true && remindertime == cooldown && ttssetting == true) {
             saythings (skillID, remindertext);
             //console.log(remindertext);
         }
@@ -114,6 +114,7 @@ function sortBuffs() {
 
 function saythings (skill, tts) {
     refirecounter[skill] += 1;
+    //console.log(refirecounter[skill]);
 
     if (refirecounter[skill] == 1) {
         callOverlayHandler({call: 'cactbotSay', text: tts});
