@@ -1,6 +1,6 @@
 # Raid Buff Overlay for FF14
 
-VERY WIP  
-goal of this "thing" : do a raidbuff overlay with cooldowns and all  
+Shows Raidbuff usage, their remaining active time and their cooldowns.
+Requires the Cactbot.dll for TTS!
   
 `https://forgottenfreedom.github.io/raidbuffsff14/`
