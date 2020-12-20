@@ -1,3 +1,10 @@
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('settings') == null) {
+        localStorage.setItem('settings', JSON.stringify(defaultsettings));
+    }
+});
+
+
 let iswipe;
 let settings = JSON.parse(localStorage.getItem('settings'));
 let refirecounter = {};
@@ -5,12 +12,6 @@ let refirecounter = {};
 for (let name in buffs) {
     refirecounter[name] = 0;
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('settings') == null) {
-        localStorage.setItem('settings', JSON.stringify(defaultsettings));
-    }
-});
 
 function loadsettings () {
     settings = JSON.parse(localStorage.getItem('settings'));
