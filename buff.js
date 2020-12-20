@@ -25,14 +25,24 @@ function buffdraw(playerID, skillID) {
     let duration = buffs[skillID].duration;
     let cooldown = buffs[skillID].cooldown - 1;
     let priority = buffs[skillID].priority;
-    let newpic = document.createElement('div');
     let skilltts = settings[tts['english'].toLowerCase().replace(/\s+/g, '') + 'cb'];
     let customtts = settings[tts['english'].toLowerCase().replace(/\s+/g, '') + 'tts'];
     let skillreminder = settings[tts['english'].toLowerCase().replace(/\s+/g, '') + 'cbr'];
     let remindertime = settings[tts['english'].toLowerCase().replace(/\s+/g, '') + 'time'];
     let remindertext = settings[tts['english'].toLowerCase().replace(/\s+/g, '') + 'text'];
-    let usertts
+    let usertts;
+    let newpic;
+    let divexist = false;
     iswipe = false;
+
+    if (document.getElementById(playerID + - + priority) != null) {
+        newpic = document.getElementById(playerID + - + priority);
+        divexist = true;
+    }
+    else {
+        newpic = document.createElement('div');
+        divexist = false;
+    }
 
     if (customtts != '') {
         usertts = customtts;
@@ -81,13 +91,10 @@ function buffdraw(playerID, skillID) {
         wrapper.removeChild(document.getElementById('awaitingdata'));
     }
 
-    if (document.getElementById(playerID + - + priority) != null) {
-        wrapper.replaceChild(newpic, document.getElementById(playerID + - + priority));
-    }
-    else {
+    if (divexist == false) {
         wrapper.appendChild(newpic);
+        sortBuffs();
     }
-    sortBuffs();
 }
 
 function sortBuffs() {
