@@ -155,6 +155,32 @@ const buffs = {
         duration: 15,
         priority: 9,
     },
+    '64C9': {
+        name: 'Searing Light',
+        img: 'https://xivapi.com/i/002000/002752_hr1.png',
+        tts: {
+            english: 'Devotion',
+            deutsch: '	Hingabe',
+            français: 'Dévouement',
+            日本語: 'エギの加護',
+        },
+        cooldown: 120,
+        duration: 30,
+        priority: 10,
+    },
+    '5F55': {
+        name: 'Arcane Circle',
+        img: 'https://xivapi.com/i/003000/003633_hr1.png',
+        tts: {
+            english: 'Devotion',
+            deutsch: '	Hingabe',
+            français: 'Dévouement',
+            日本語: 'エギの加護',
+        },
+        cooldown: 120,
+        duration: 20,
+        priority: 11,
+    },
 }
 const trackedLogLineId = [
     '21',
@@ -172,7 +198,9 @@ const trackedAbilityId = [
     '1D60', //Embolden
     'DE5', //Battle Litany
     '76', //Battle Voice
-    '64B9', //Devotion
+    '64B9', //Radiant Finale
+    '64C9', //Searing Light
+    '5F55', //Arcane Circle
 ];
 const wipeLogLineId = '33';
 const wipeTrackedActorId = [
