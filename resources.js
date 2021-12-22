@@ -1,7 +1,7 @@
 const buffs = {
     '8D2': {
         name: 'Trickattack',
-        img: 'https://xivapi.com/i/000000/000618.png',
+        img: 'https://xivapi.com/i/000000/000618_hr1.png',
         tts: {
             english: 'Trickattack',
             deutsch: 'Trickattacke',
@@ -14,20 +14,20 @@ const buffs = {
     },
     '1CE4': {
         name: 'Brotherhood',
-        img: 'https://xivapi.com/i/002000/002542.png',
+        img: 'https://xivapi.com/i/002000/002542_hr1.png',
         tts: {
             english: 'Brotherhood',
             deutsch: 'Bruderschaft',
             français: 'Fraternité',
             日本語: '桃園結義',
         },
-        cooldown: 90,
+        cooldown: 120,
         duration: 15,
         priority: 2,
     },
     '40A8': {
         name: 'Divination',
-        img: 'https://xivapi.com/i/003000/003553.png',
+        img: 'https://xivapi.com/i/003000/003553_hr1.png',
         tts: {
             english: 'Divination',
             deutsch: 'Weissagung',
@@ -40,7 +40,7 @@ const buffs = {
     }, 
     '1D0C': {
         name: 'Chain Stratagem',
-        img: 'https://xivapi.com/i/002000/002815.png',
+        img: 'https://xivapi.com/i/002000/002815_hr1.png',
         tts: {
             english: 'Chain Stratagem',
             deutsch: 'Kritische Strategie',
@@ -53,7 +53,7 @@ const buffs = {
     }, 
     '3F41': {
         name: 'Single Technical Finish',
-        img: 'https://xivapi.com/i/003000/003473.png',
+        img: 'https://xivapi.com/i/003000/003473_hr1.png',
         tts: {
             english: 'Technical Finish',
             deutsch: 'Komplexes Finale',
@@ -61,12 +61,12 @@ const buffs = {
             日本語: 'デテクニカルフィニッシュ',
         },
         cooldown: 120,
-        duration: 15,
+        duration: 20,
         priority: 5,
     },
     '3F42': {
         name: 'Double Technical Finish',
-        img: 'https://xivapi.com/i/003000/003473.png',
+        img: 'https://xivapi.com/i/003000/003473_hr1.png',
         tts: {
             english: 'Technical Finish',
             deutsch: 'Komplexes Finale',
@@ -74,12 +74,12 @@ const buffs = {
             日本語: 'デテクニカルフィニッシュ',
         },
         cooldown: 120,
-        duration: 15,
+        duration: 20,
         priority: 5,
     }, 
     '3F43': {
         name: 'Triple Technical Finish',
-        img: 'https://xivapi.com/i/003000/003473.png',
+        img: 'https://xivapi.com/i/003000/003473_hr1.png',
         tts: {
             english: 'Technical Finish',
             deutsch: 'Komplexes Finale',
@@ -87,12 +87,12 @@ const buffs = {
             日本語: 'デテクニカルフィニッシュ',
         },
         cooldown: 120,
-        duration: 15,
+        duration: 20,
         priority: 5,
     }, 
     '3F44': {
         name: 'Quadruple Technical Finish',
-        img: 'https://xivapi.com/i/003000/003473.png',
+        img: 'https://xivapi.com/i/003000/003473_hr1.png',
         tts: {
             english: 'Technical Finish',
             deutsch: 'Komplexes Finale',
@@ -100,12 +100,12 @@ const buffs = {
             日本語: 'デテクニカルフィニッシュ',
         },
         cooldown: 120,
-        duration: 15,
+        duration: 20,
         priority: 5,
     },
     '1D60': {
         name: 'Embolden',
-        img: 'https://xivapi.com/i/003000/003218.png',
+        img: 'https://xivapi.com/i/003000/003218_hr1.png',
         tts: {
             english: 'Embolden',
             deutsch: '	Ermutigen',
@@ -118,40 +118,40 @@ const buffs = {
     },
     'DE5': {
         name: 'Battle Litany',
-        img: 'https://xivapi.com/i/002000/002585.png',
+        img: 'https://xivapi.com/i/002000/002585_hr1.png',
         tts: {
             english: 'Battle Litany',
             deutsch: 'Litanei der Schlacht',
             français: '	Litanie combattante',
             日本語: 'デバトルリタニー',
         },
-        cooldown: 180,
-        duration: 20,
+        cooldown: 120,
+        duration: 15,
         priority: 7,
     },
     '76': {
         name: 'Battle Voice',
-        img: 'https://xivapi.com/i/002000/002601.png',
+        img: 'https://xivapi.com/i/002000/002601_hr1.png',
         tts: {
             english: 'Battle Voice',
             deutsch: 'Ode an die Seele',
             français: '	Voix de combat',
             日本語: 'バトルボイス',
         },
-        cooldown: 180,
-        duration: 20,
+        cooldown: 120,
+        duration: 15,
         priority: 8,
     },
-    '1CFF': {
-        name: 'Devotion',
-        img: 'https://xivapi.com/i/002000/002687.png',
+    '64B9': {
+        name: 'Radiant Finale',
+        img: 'https://xivapi.com/i/002000/002622_hr1.png',
         tts: {
             english: 'Devotion',
             deutsch: '	Hingabe',
             français: 'Dévouement',
             日本語: 'エギの加護',
         },
-        cooldown: 180,
+        cooldown: 110,
         duration: 15,
         priority: 9,
     },
@@ -172,7 +172,7 @@ const trackedAbilityId = [
     '1D60', //Embolden
     'DE5', //Battle Litany
     '76', //Battle Voice
-    '1CFF', //Devotion
+    '64B9', //Devotion
 ];
 const wipeLogLineId = '33';
 const wipeTrackedActorId = [
